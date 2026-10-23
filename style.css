@@ -1,0 +1,43 @@
+:root { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #263339; background: #f5f5f1; line-height: 1.55; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 45px 22px; }
+main { width: min(100%, 1180px); margin: 0 auto; }
+header { max-width: 790px; margin-bottom: 30px; }
+.eyebrow { font-size: .74rem; text-transform: uppercase; letter-spacing: 1.4px; font-weight: 750; color: #8b785d; margin: 0 0 12px; }
+h1 { font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.15; letter-spacing: -.9px; margin: 0 0 17px; }
+.intro { color: #7b8384; margin: 0; }
+.tariffs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 28px; }
+.tariffs article { padding: 24px; border: 1px solid #dfdfd7; border-radius: 14px; background: #fff; }
+.tariffs .express { background: #f1ece2; border-color: #ddd2bd; }
+.tariff-number { font-size: .73rem; color: #a59a88; }
+.tariffs h2 { font-size: .94rem; margin: 8px 0 14px; font-weight: 600; }
+.tariff-value { font-size: 1.95rem; line-height: 1.2; margin: 0; font-weight: 700; color: #5d503e; letter-spacing: -.6px; }
+.tariff-value span { font-size: .8rem; font-weight: 450; color: #8e8375; letter-spacing: 0; }
+.tariff-note { font-size: .76rem; color: #959287; margin: 10px 0 0; }
+.results-panel { background: #fff; border: 1px solid #dcdfd9; border-radius: 14px; overflow: hidden; }
+.panel-heading { padding: 24px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+h2 { font-size: 1.1rem; margin: 0; }
+.panel-heading p { margin: 6px 0 0; font-size: .8rem; color: #92958d; }
+.count { font-size: .77rem; color: #857b69; white-space: nowrap; padding: 6px 11px; border-radius: 99px; background: #f3f0e8; }
+.table-scroll { overflow-x: auto; }
+.table-scroll:focus-visible { outline: 3px solid #b7a483; outline-offset: -3px; }
+table { border-collapse: collapse; width: 100%; font-size: .84rem; font-variant-numeric: tabular-nums; }
+th, td { padding: 16px 18px; text-align: right; border-top: 1px solid #e8e9e3; white-space: nowrap; }
+th { background: #f7f7f2; font-size: .74rem; color: #8d907f; font-weight: 600; }
+td { color: #5a6463; }
+th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+td:last-child { color: #846741; font-weight: 650; }
+.table-note { padding: 16px 24px; border-top: 1px solid #e8e9e3; font-size: .75rem; color: #929385; margin: 0; }
+.encapsulation { border-left: 3px solid #b6a581; padding: 3px 0 3px 18px; margin-top: 28px; }
+.encapsulation h2 { font-size: .92rem; }
+.encapsulation p { font-size: .83rem; color: #818677; margin: 7px 0 0; }
+.console-note { margin: 26px 0 0; color: #828783; font-size: .8rem; }
+kbd { background: #fff; border: 1px solid #d3d7cd; border-radius: 4px; padding: 1px 4px; }
+footer { margin-top: 22px; font-size: .72rem; color: #a2a397; }
+@media (max-width: 650px) {
+  body { padding: 30px 16px; }
+  .tariffs { grid-template-columns: 1fr; gap: 12px; }
+  .tariffs article { padding: 20px; }
+  .tariff-value { font-size: 1.7rem; }
+  .panel-heading { padding: 21px; align-items: flex-start; flex-direction: column; }
+}
