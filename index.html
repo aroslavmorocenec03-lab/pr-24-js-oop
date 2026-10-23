@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Основи ООП у JavaScript — Практична №24</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Практична робота №24 · JavaScript</p>
+      <h1>Вартість доставки</h1>
+      <p class="intro">Класи, інкапсуляція, наслідування та поліморфізм на прикладі поштових відправлень.</p>
+    </header>
+
+    <section class="tariffs" aria-label="Навчальні тарифи доставки">
+      <article><span class="tariff-number">01</span><h2>Відділення пошти</h2><p class="tariff-value">15 <span>грн/кг</span></p><p class="tariff-note">Базовий розрахунок за вагою</p></article>
+      <article><span class="tariff-number">02</span><h2>Кур’єрська доставка</h2><p class="tariff-value">30 <span>грн/кг</span></p><p class="tariff-note">Окремий тариф нащадка</p></article>
+      <article class="express"><span class="tariff-number">03</span><h2>Експрес-доставка</h2><p class="tariff-value">30 + 25 <span>грн/кг</span></p><p class="tariff-note">Тариф і доплата за терміновість</p></article>
+    </section>
+
+    <section class="results-panel" aria-labelledby="results-heading">
+      <div class="panel-heading"><div><h2 id="results-heading">Порівняння відправлень</h2><p>Розрахункова вага — більше з фактичної та об’ємної.</p></div><span class="count">Створено: <strong id="parcel-count">0</strong></span></div>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Результати розрахунку з горизонтальним прокручуванням">
+        <table>
+          <thead><tr><th scope="col">Одержувач</th><th scope="col">Розміри, см</th><th scope="col">Фактична, кг</th><th scope="col">Об’ємна, кг</th><th scope="col">Розрахункова, кг</th><th scope="col">Пошта, грн</th><th scope="col">Кур’єр, грн</th><th scope="col">Експрес, грн</th></tr></thead>
+          <tbody id="parcel-results"></tbody>
+        </table>
+      </div>
+      <p class="table-note">Об’ємна вага = довжина × ширина × висота / 5000.</p>
+    </section>
+
+    <section class="encapsulation" aria-labelledby="encapsulation-heading">
+      <h2 id="encapsulation-heading">Перевірка інкапсуляції</h2>
+      <p id="validation-result" role="status" aria-live="polite"></p>
+    </section>
+    <p class="console-note">Відкрийте <kbd>F12</kbd> → <strong>Console</strong>, щоб побачити описи посилок, результати трьох калькуляторів і статичний лічильник.</p>
+    <footer>Навчальні приклади та тарифи · Пояснення й контрольні запитання в README</footer>
+    <noscript>Увімкніть JavaScript, щоб побачити результати роботи класів.</noscript>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
